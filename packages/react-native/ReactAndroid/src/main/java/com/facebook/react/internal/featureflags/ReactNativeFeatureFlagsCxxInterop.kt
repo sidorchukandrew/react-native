@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<87b76f5c2af82462dc66c7721cd66ac4>>
+ * @generated SignedSource<<9a171a03d15885e64b84f03442b304b4>>
  */
 
 /**
@@ -101,6 +101,8 @@ public object ReactNativeFeatureFlagsCxxInterop {
   @DoNotStrip @JvmStatic public external fun enableLayoutAnimationsOnIOS(): Boolean
 
   @DoNotStrip @JvmStatic public external fun enableModuleArgumentNSNullConversionIOS(): Boolean
+
+  @DoNotStrip @JvmStatic public external fun enableMountingCoordinatorPullModelAndroid(): Boolean
 
   @DoNotStrip @JvmStatic public external fun enableMutationObserverByDefault(): Boolean
 

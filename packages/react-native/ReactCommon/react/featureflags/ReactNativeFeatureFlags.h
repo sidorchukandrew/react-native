@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<f871b2203c86dd7f25640cd3a6ea7d00>>
+ * @generated SignedSource<<66d7e8a85d0925fc03660ac22f2fb500>>
  */
 
 /**
@@ -223,6 +223,11 @@ class ReactNativeFeatureFlags {
    * Enable NSNull conversion when handling module arguments on iOS
    */
   RN_EXPORT static bool enableModuleArgumentNSNullConversionIOS();
+
+  /**
+   * When enabled, Android mounts transactions with the pull model (like iOS): the commit thread no longer pulls and builds the mount batch in schedulerShouldRenderTransactions. Instead the UI thread pulls the transaction itself via a PullTransactionMountItem enqueued in the MountItemDispatcher, builds the IntBufferBatchMountItem, and applies it synchronously. Implies rawProps accumulation (enableAccumulatedUpdatesInRawPropsAndroid behavior).
+   */
+  RN_EXPORT static bool enableMountingCoordinatorPullModelAndroid();
 
   /**
    * Enables the MutationObserver Web API in React Native.
