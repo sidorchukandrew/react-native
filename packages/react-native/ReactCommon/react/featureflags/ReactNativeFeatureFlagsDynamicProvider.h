@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @generated SignedSource<<b34b31496393a84b7d4950bfc87e04a7>>
+ * @generated SignedSource<<cb5f19045e36125a041835658c8ef6d1>>
  */
 
 /**
@@ -376,6 +376,15 @@ class ReactNativeFeatureFlagsDynamicProvider : public ReactNativeFeatureFlagsDef
     }
 
     return ReactNativeFeatureFlagsDefaults::enableModuleArgumentNSNullConversionIOS();
+  }
+
+  bool enableMountingCoordinatorPullModelAndroid() override {
+    auto value = values_["enableMountingCoordinatorPullModelAndroid"];
+    if (!value.isNull()) {
+      return value.getBool();
+    }
+
+    return ReactNativeFeatureFlagsDefaults::enableMountingCoordinatorPullModelAndroid();
   }
 
   bool enableMutationObserverByDefault() override {
